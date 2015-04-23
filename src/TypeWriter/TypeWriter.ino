@@ -9,6 +9,7 @@ int current = LOW;
 void setup(){
   pinMode(inputPin, INPUT);
   pinMode(ledPin, OUTPUT);
+  digitalWrite(ledPin, HIGH);
   Serial.begin(9600);
 }
 
@@ -32,8 +33,10 @@ void loop(){
       }
       Serial.println("ARMED AND READY");
     }
+    digitalWrite(ledPin, LOW);
    Serial.println("PLING");
-   delay(2000);
+   delay(10000);
+   digitalWrite(ledPin, HIGH);
   }
   /*
   currentState = digitalRead(inputPin);
