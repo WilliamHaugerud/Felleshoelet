@@ -2,21 +2,21 @@
 int inputPin = 8;
 int ledPin = 9;
 
-int lastState = HIGH ;
-int currentState = HIGH;
+#define PLING_TIME 10
+
 int current = LOW;
 
 void setup(){
   pinMode(inputPin, INPUT);
   pinMode(ledPin, OUTPUT);
   digitalWrite(ledPin, HIGH);
-  Serial.begin(9600);
 }
 
 
 void loop(){
   current = digitalRead(inputPin);
   int temp = LOW;
+  
   if (current == HIGH){
    while (current == HIGH){
       current = digitalRead(inputPin);
@@ -31,24 +31,11 @@ void loop(){
          current = HIGH;
         }
       }
-      Serial.println("ARMED AND READY");
+        //ARMED
     }
     digitalWrite(ledPin, LOW);
-   Serial.println("PLING");
-   delay(10000);
+    //PLING
+   delay(PLING_TIME*1000);
    digitalWrite(ledPin, HIGH);
   }
-  /*
-  currentState = digitalRead(inputPin);
-  if(lastState == HIGH){
-    if(currentState == LOW){
-      digitalWrite(ledPin, HIGH);
-      Serial.println("PLING!");
-      delay(4000);
-      digitalWrite(ledPin, LOW);
-    }
-  }
-  Serial.println("Venter på kontakt");
-  lastState = currentState;
-  */
 }
