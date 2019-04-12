@@ -1,2 +1,2 @@
 # Felleshoelet
-Sketch for the pling in Felleshølet
+Source code for the pling in Felleshølet
