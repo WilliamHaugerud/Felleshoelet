@@ -6,4 +6,4 @@ Kildekode for plingen på Felleshølet.
 
 Plingen er programmert inn på en Arduino Nano. Arduinoen driver en megafon og en lampe, styrt av en enkel knapp.
 
-Beskrivelse av hvilke pinner som skal plugges hvor finnes i koblingsskjema og kildekoden.
+Beskrivelse av hvilke pinner som skal plugges hvor finnes i koblingsskjema (åpnes i draw.io) og kildekoden.
