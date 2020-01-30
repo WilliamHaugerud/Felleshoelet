@@ -8,8 +8,8 @@ from pydub.playback import play
 import os
 import random
 
-CLIENT_ID = "c5f368c2a74e413fa09d66cefefbc026"
-CLIENT_SECRET = "bff82257c69a472eb8a0dd3b70f68be2"
+CLIENT_ID = ""
+CLIENT_SECRET = ""
 REDIRECT_URI = "http://localhost:5000/callback"
 
 AUTH_CODE = None
